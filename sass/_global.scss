@@ -1,0 +1,51 @@
+@import "varaibles";
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+a{
+    color: #000 ;
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+  color: black;
+}
+@mixin boxStyles {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.box {
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  @include boxStyles();
+}
+.fp-watermark {
+  display: none;
+}
+
+.btn-pink {
+  background-color: $MainColor;
+  color: #fff;
+  &:hover {
+    border-color: $MainColor;
+    color: $MainColor;
+  }
+}
+.btn-pink-alt {
+  background-color: #fff;
+  border-color: $MainColor;
+  color: $MainColor;
+  &:hover {
+    background-color: $MainColor;
+    border-color: $MainColor;
+    color: #fff;
+  }
+}

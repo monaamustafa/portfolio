@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+  color: black;
+}
+
+.box {
+  padding: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.fp-watermark {
+  display: none;
+}
+
+.btn-pink {
+  background-color: #ff85a7;
+  color: #fff;
+}
+.btn-pink:hover {
+  border-color: #ff85a7;
+  color: #ff85a7;
+}
+
+.btn-pink-alt {
+  background-color: #fff;
+  border-color: #ff85a7;
+  color: #ff85a7;
+}
+.btn-pink-alt:hover {
+  background-color: #ff85a7;
+  border-color: #ff85a7;
+  color: #fff;
+}
+
+.section {
+  max-height: 100vh;
+  margin: 0 !important;
+  padding-top: 30px;
+  min-height: 100vh;
+}
+.section h2 {
+  font-family: "Dancing Script", cursive;
+  text-transform: capitalize;
+  font-size: 50px;
+}
+.section h2::after {
+  content: "";
+  margin: auto;
+  width: 30%;
+  border-bottom: 2px solid #ff85a7;
+  display: block;
+  margin-top: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.asideNav {
+  bottom: 50px;
+  left: 0;
+  z-index: 1;
+  padding: 10px 30px;
+  position: absolute;
+}
+.asideNav i {
+  display: block;
+  margin-bottom: 30px;
+}
+
+#fullpage {
+  margin: 0 !important;
+}
+
+.home .info-content {
+  margin-top: 70px;
+  width: 58%;
+  padding-top: 50px;
+}
+.home .info-content h1 {
+  text-transform: uppercase;
+  font-family: "Dancing Script", cursive;
+}
+.home .info-content .role {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.home .info-content .contactMe-cont {
+  text-transform: capitalize;
+  margin-top: 110px;
+}
+.home .info-content .contactMe-cont .contactMe:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.747);
+}
+.home .info-content .contactMe-cont .contactMe {
+  padding-right: 30px;
+  padding-left: 10px;
+}
+.home .info-content .contactMe-cont .contactMe p:first-child {
+  font-weight: 500;
+}
+.home .profile-img {
+  width: 50%;
+}
+.home .profile-img img {
+  width: 100%;
+}
+
+.about {
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-image: url("../images/wave1.svg");
+}
+.about .about-details {
+  width: 60%;
+  margin: auto;
+}
+
+.projects .project {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  box-shadow: #eee 0px 7px 29px 0px;
+  width: 26%;
+}
+.projects .project:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.projects .project img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+.projects .project a {
+  text-decoration: underline;
+}
+.projects .project .icon {
+  font-size: 40px;
+}
+
+.services .services-box {
+  width: 25%;
+  margin: 3%;
+}
+.services .services-box .box-img {
+  width: 20%;
+  margin: auto;
+}
+.services .services-box progress {
+  height: 50px;
+  width: 100%;
+}
+
+.contact form {
+  width: 60%;
+  margin: auto;
+}
+.contact form .btn-pink {
+  background-color: #ff85a7;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

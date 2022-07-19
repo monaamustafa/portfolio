@@ -1,0 +1,130 @@
+@import "global";
+@import "varaibles";
+.section {
+  max-height: 100vh;
+  margin: 0 !important;
+  padding-top: 30px;
+  min-height: 100vh;
+  h2 {
+    font-family: $headingFonts;
+    text-transform: capitalize;
+    font-size: 50px;
+    &::after {
+      content: "";
+      margin: auto;
+      width: 30%;
+      border-bottom: 2px solid $MainColor;
+      display: block;
+      margin-top: 10px;
+      // box-shadow: 1px 1px #eee;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+  }
+}
+.asideNav {
+  bottom: 50px;
+  left: 0;
+  z-index: 1;
+  padding: 10px 30px;
+  // width: 100px;
+  position: absolute;
+  i {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+#fullpage {
+  margin: 0 !important;
+}
+.home {
+  .info-content {
+    margin-top: 70px;
+    width: 58%;
+    padding-top: 50px;
+    h1 {
+      text-transform: uppercase;
+      font-family: $headingFonts;
+    }
+    .role {
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .contactMe-cont {
+      text-transform: capitalize;
+      margin-top: 110px;
+
+      .contactMe:not(:last-child) {
+        border-right: 1px solid rgba(0, 0, 0, 0.747);
+      }
+      .contactMe {
+        padding-right: 30px;
+        padding-left: 10px;
+        p:first-child {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .profile-img {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+}
+.about {
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-image: url("../images/wave1.svg");
+  .about-details {
+    width: 60%;
+    margin: auto;
+  }
+}
+.projects {
+  .project {
+    @include boxStyles();
+    padding-top: 10px;
+    padding-bottom: 30px;
+    box-shadow: #eee 0px 7px 29px 0px;
+    width: 26%;
+    &:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    img {
+      width: 60%;
+      display: block;
+      margin: auto;
+    }
+    a{
+      text-decoration: underline;
+    }
+    .icon {
+      font-size: 40px;
+    }
+  }
+}
+.services {
+  .services-box {
+    width: 25%;
+    margin: 3%;
+    .box-img {
+      width: 20%;
+      margin: auto;
+    }
+    progress{
+      height: 50px;
+      width: 100%;
+    }
+  }
+}
+.contact {
+  form {
+    width: 60%;
+    margin: auto;
+    .btn-pink {
+      background-color: $MainColor;
+      color: #fff;
+    }
+  }
+}
